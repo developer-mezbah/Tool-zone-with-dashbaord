@@ -10,6 +10,8 @@
 
 body{
     font-family: "Roboto", serif;
+    width: 100vw;
+    overflow-x: hidden !important;
 }
 
 .nav-acitve{
@@ -151,4 +153,23 @@ body{
 .button-load-more:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+/* Animation added */
+.navbar-animation{
+  transform: translateY(0%);
+  animation: fade-top 0.5s;
+}
+@keyframes fade-top{
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+
+.form-box{
+  box-shadow: rgba(248, 247, 247, 0.08) 0px 0px 2px 0px, rgba(175, 192, 221, 0.06) 0px 1px 2px 0px, rgba(242, 172, 172, 0.03) 0px 0px 0px 1px;
 }

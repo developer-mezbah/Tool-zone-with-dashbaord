@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff4b34",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="form-modal fixed top-0 left-0 right-0 bottom-0 w-screen h-screen flex flex-col justify-center items-center overflow-x-hidden"
+      style="background-color: rgb(0, 0, 0, 0.2)"
+    >
+      <div
+        class="flex justify-between items-center sm:mx-auto mx-3 md:w-[500px] sm:w-[80%] w-[95%] bg-[#f7f7f7] px-5 pb-8 pt-5 rounded-tl-xl rounded-tr-xl -mb-3"
+      >
+        <h2 class="text-xl font-semibold">Sign up</h2>
+        <button
+          class="text-xl border-primary border-[2px] px-[10px] py-[3px] rounded-full text-primary"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form
+        class="sm:mx-auto mx-3 md:w-[500px] sm:w-[80%] w-[95%] bg-white px-5 pt-8 pb-5 rounded-xl form-box overflow-x-hidden"
+      >
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="full_name"
+            id="full_name"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="full_name"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Full Name</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="username"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Username</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="email"
+            name="floating_email"
+            id="floating_email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_email"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Email address</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="number"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Number</label
+          >
+        </div>
+        <div class="mb-5">
+          <label
+            for="website-admin"
+            class="block mb-2 text-sm font-medium text-gray-500"
+            >Password</label
+          >
+          <div class="flex">
+            <input
+              type="password"
+              id="website-admin"
+              class="rounded-none rounded-s-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
+              placeholder="***"
+            />
+            <span
+              class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-e-md"
+            >
+              <i class="fa-regular fa-eye-slash"></i>
+            </span>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="group text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+        >
+          
+        Register
+          <span class="ml-2"
+            ><i
+              class="fa-regular fa-paper-plane group-hover:rotate-45 transition-all"
+            ></i
+          ></span>
+        </button>
+      </form>
+
+      <div
+        class="sm:mx-auto mx-3 md:w-[500px] sm:w-[80%] w-[95%] bg-[#f7f7f7] px-5 pt-8 pb-5 rounded-bl-xl rounded-br-xl flex flex-nowrap gap-2 -mt-2"
+      >
+        <p class="text-sm text-[#747686]">Already have an account Here.</p>
+        <a
+          href="./login.html"
+          class="text-sm font-semibold text-blue-500 underline hover:text-blue-700 whitespace-normal"
+          >Login here</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
