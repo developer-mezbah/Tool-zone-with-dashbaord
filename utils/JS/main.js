@@ -16,6 +16,7 @@ const toggleNav = () => {
   if (navbar.style.visibility === "hidden") {
     navbar.style.right = "0px";
     navbar.style.visibility = "visible";
+    navbar.classList.remove("hidden")
     hambargerSvg.style.display = "none";
     closeSvg.style.display = "block";
   } else {

@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, magenta, cyan);
+}
+.admin-dashboard nav {
+  width: 90%;
+  height: 710px;
+  margin: 25px auto;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.admin-dashboard aside {
+  width: 20%;
+  height: 100%;
+  background: #000d33;
+  float: left;
+}
+.admin-dashboard aside h1 img {
+  width: 51px;
+  float: left;
+}
+.admin-dashboard aside h1 span {
+  font-size: 30px;
+  line-height: 50px;
+  margin-left: 6px;
+  color: white;
+}
+.admin-dashboard aside ul {
+  padding: 5px 0 5px 30px;
+}
+.admin-dashboard aside ul li {
+  list-style: none;
+  font-weight: bold;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  max-height: 35px;
+  line-height: 35px;
+  transition: 1s;
+  text-transform: capitalize;
+}
+.admin-dashboard aside ul:first-child li {
+  max-height: 50px;
+}
+.admin-dashboard aside ul li:hover {
+  background: #d1d1d173;
+}
+.admin-dashboard aside ul:first-child li:hover {
+  background: none;
+}
+.admin-dashboard aside ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.admin-dashboard aside ul li a i {
+  width: 30px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.admin-dashboard aside ul li a i.fa-angle-right {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  transition: 0.5s;
+}
+.admin-dashboard aside ul li > ul {
+  padding: 1px;
+  margin: 0 0 0 20px;
+}
+.admin-dashboard aside ul li > ul li {
+  height: 25px;
+  line-height: 20px;
+  font-size: 15px;
+  padding: 1px 1px 1px 20px;
+  font-weight: normal;
+  border-left: 1px solid #fff0f0;
+  margin: 5px;
+  color: #fff0f0;
+  cursor: pointer;
+}
+.admin-dashboard aside ul li > ul li a,
+.admin-dashboard aside ul li:target > ul li a {
+  background: transparent;
+}
+.admin-dashboard aside ul li:target {
+  max-height: 300px;
+  border-radius: 5px 0px 0px 5px;
+}
+.admin-dashboard aside ul li:target a {
+  color: #444;
+  display: inherit;
+  background: white;
+}
+.admin-dashboard aside ul li:target a i.fa-angle-right {
+  transform: rotate(90deg);
+  top: 10px;
+}
+.admin-dashboard aside ul li:target:hover {
+  background: initial;
+}
+
+.admin-dashboard header {
+  width: 80%;
+  height: 100%;
+  float: left;
+  font-family: sans-serif;
+}
+.admin-dashboard header .banner {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+  position: relative;
+}
+.admin-dashboard header > p {
+  text-align: center;
+}
+.admin-dashboard header .banner div,
+.admin-dashboard header .banner img {
+  width: 50%;
+}
+.admin-dashboard header .banner div h1 {
+  font-size: 100px;
+  text-align: center;
+  color: #333;
+  font-weight: normal;
+}
+.admin-dashboard header .banner div p {
+  line-height: 27px;
+  padding: 2px 0px 2px 50px;
+}
+.admin-dashboard .banner h6 {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  left: 50%;
+  transform: rotateZ(0deg);
+  animation: rotate 10s linear infinite;
+  border-radius: 50%;
+  border: 1px solid #f7f7f7;
+}
+.admin-dashboard .banner h6:before {
+  content: "";
+  position: absolute;
+  left: 172px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(purple, deeppink);
+  border-radius: 30px 30px 30px 0px;
+  transform: rotate(25deg);
+}
+@keyframes rotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
