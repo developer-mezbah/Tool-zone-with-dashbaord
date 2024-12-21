@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./utils/css/admin-dashboard.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff4b34",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="admin-dashboard">
+      <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+          <i class="fa-brands fa-xing"></i>
+          <div class="logo-name">ToolsZone</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-house"></i>
+                <span class="name">Dashboard</span>
+              </a>
+            </div>
+            <div class="submenu">
+              <!--   This class used for only one Link  -->
+              <a href="#" class="link">Dashboard</a>
+              <!-- submenu links here  -->
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span class="name">Single Tools</span> </a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All Tools</a>
+              <a href="#" class="link">Create & Update</a>
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-boxes-packing"></i>
+                <span class="name">Package Tools</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#package" class="link">All Packages</a>
+              <a href="#" class="link">Create & Update</a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-solar-panel"></i>
+                <span class="name">Update Panel</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#afsd" class="link">All Panel</a>
+              <a href="#afsd" class="link">Normal Update</a>
+              <a href="#afsd" class="link">Advance Update</a>
+              <a href="#afsd" class="link">Update Cookies</a>
+              <!-- submenu links here  -->
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#order" class="link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="name">Orders</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-users"></i>
+                <span class="name">Users</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All User</a>
+              <a href="#" class="link">Update User</a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-brands fa-dyalog"></i>
+                <span class="name">Logs</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#asfsad" class="link">
+                <i class="fa-regular fa-comments"></i>
+                <span class="name">Review</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa fa-tasks"></i>
+                <span class="name">Coupons</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All Coupons</a>
+              <a href="#" class="link">Update Coupons</a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <span class="name">Send Mail</span>
+              </a>
+            </div>
+          </li>
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-gear"></i>
+                <span class="name">Settings</span>
+              </a>
+            </div>
+          </li>
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-regular fa-file-code"></i>
+                <span class="name">CSS Mastary</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All CSS</a>
+              <a href="#" class="link">Update CSS</a>
+            </div>
+          </li>
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-link"></i>
+                <span class="name">URL Mastery</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All URL Mastery</a>
+              <a href="#" class="link">Update URL Mastery</a>
+            </div>
+          </li>
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-universal-access"></i>
+                <span class="name">Access Tutorial</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All tutorial</a>
+              <a href="#" class="link">Update tutorial</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ============= Home or Content Section =============== -->
+      <section class="home">
+        <div class="toggle-sidebar">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <div class="text">Toggle</div> -->
+        </div>
+
+        <div class="dasboard-content md:ml-12 ml-2 md:mr-4 mr-2">
+          <div class="form bg-white md:p-5 p-2 rounded-xl">
+            <h3 class="text-2xl font-semibold text-slate-800 mt-2 md:mt-0">
+              Create Coupon
+            </h3>
+            <form class="mt-4">
+              <div class="grid md:grid-cols-2 md:gap-x-8">
+                <div class="mb-5">
+                  <label
+                    for="ProductName"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Product Name</label
+                  >
+                  <input
+                    type="text"
+                    id="ProductName"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Write Product Name..."
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="Coupon"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Coupon</label
+                  >
+                  <input
+                    type="text"
+                    id="Coupon"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Write Coupon Name..."
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="Percentage"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Percentage User</label
+                  >
+                  <input
+                    type="number"
+                    id="Percentage"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Percentage..."
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="Amount"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Amount</label
+                  >
+                  <input
+                    type="number"
+                    id="Amount"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Amount..."
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="Affiliater"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Affiliater Name</label
+                  >
+                  <input
+                    type="text"
+                    id="Affiliater"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Offer Price..."
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="pAffiliater"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Percentage Affiliater</label
+                  >
+                  <input
+                    type="number"
+                    id="pAffiliater"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Percentage..."
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="countries"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >Status</label
+                  >
+                  <select
+                    id="countries"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  >
+                    <option>Active</option>
+                    <option>Inactive</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-full text-center">
+                <button
+                  type="button"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-7 py-3.5 me-2 mb-2 focus:outline-none mt-4 group"
+                >
+                  Submit <span> <i class="fa-regular fa-paper-plane group-hover:rotate-45 transition-all"></i></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./utils/JS/admin-dashboard.js"></script>
+  </body>
+</html>

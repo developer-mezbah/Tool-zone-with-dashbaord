@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./utils/css/admin-dashboard.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff4b34",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="admin-dashboard">
+      <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+          <i class="fa-brands fa-xing"></i>
+          <div class="logo-name">ToolsZone</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-house"></i>
+                <span class="name">Dashboard</span>
+              </a>
+            </div>
+            <div class="submenu">
+              <!--   This class used for only one Link  -->
+              <a href="#" class="link">Dashboard</a>
+              <!-- submenu links here  -->
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span class="name">Single Tools</span> </a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All Tools</a>
+              <a href="#" class="link">Create & Update</a>
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-boxes-packing"></i>
+                <span class="name">Package Tools</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#package" class="link">All Packages</a>
+              <a href="#" class="link">Create & Update</a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-solar-panel"></i>
+                <span class="name">Update Panel</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#afsd" class="link">All Panel</a>
+              <a href="#afsd" class="link">Normal Update</a>
+              <a href="#afsd" class="link">Advance Update</a>
+              <a href="#afsd" class="link">Update Cookies</a>
+              <!-- submenu links here  -->
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#order" class="link">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="name">Orders</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-users"></i>
+                <span class="name">Users</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All User</a>
+              <a href="#" class="link">Update User</a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-brands fa-dyalog"></i>
+                <span class="name">Logs</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#asfsad" class="link">
+                <i class="fa-regular fa-comments"></i>
+                <span class="name">Review</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa fa-tasks"></i>
+                <span class="name">Coupons</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All Coupons</a>
+              <a href="#" class="link">Update Coupons</a>
+            </div>
+          </li>
+
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <span class="name">Send Mail</span>
+              </a>
+            </div>
+          </li>
+          <!-- -------- Non Dropdown List Item ------- -->
+          <li>
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-gear"></i>
+                <span class="name">Settings</span>
+              </a>
+            </div>
+          </li>
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-regular fa-file-code"></i>
+                <span class="name">CSS Mastary</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All CSS</a>
+              <a href="#" class="link">Update CSS</a>
+            </div>
+          </li>
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-link"></i>
+                <span class="name">URL Mastery</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All URL Mastery</a>
+              <a href="#" class="link">Update URL Mastery</a>
+            </div>
+          </li>
+          <!-- -------- Dropdown List Item ------- -->
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <i class="fa-solid fa-universal-access"></i>
+                <span class="name">Access Tutorial</span>
+              </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link">All tutorial</a>
+              <a href="#" class="link">Update tutorial</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ============= Home or Content Section =============== -->
+      <section class="home">
+        <div class="toggle-sidebar">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <div class="text">Toggle</div> -->
+        </div>
+
+        <div class="dasboard-content md:ml-12 ml-2 md:mr-4 mr-2">
+          <div class="mx-auto">
+            <div class="bg-white p-4 rounded-md">
+              <h3 class="text-2xl font-semibold text-slate-800">
+                Add Display none Css
+              </h3>
+              <button
+                type="button"
+                class="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+              >
+                Add Tools <span> <i class="fa-solid fa-plus"></i></span>
+              </button>
+              <form action="" class="grid md:grid-cols-2 gap-5 mb-5">
+                <div class="mb-5">
+                  <label
+                    for="ToolsName"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >ToolsName</label
+                  >
+                  <input
+                    type="text"
+                    id="ToolsName"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  />
+                </div>
+                <div class="mb-5">
+                  <label
+                    for="WriteCss"
+                    class="block mb-2 text-sm font-medium text-gray-900"
+                    >List URL</label
+                  >
+                  <textarea
+                    id="WriteCss"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+                  >
+                    Add CSS <span> <i class="fa-solid fa-plus"></i></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div
+              class="w-full sm:flex justify-between items-center mb-3 mt-7 md:pl-3"
+            >
+              <div>
+                <h3 class="text-lg font-semibold text-slate-800">
+                  URL Mastary
+                </h3>
+              </div>
+              <div class="md:ml-3">
+                <div class="w-full max-w-sm min-w-[200px] relative">
+                  <div class="relative">
+                    <input
+                      class="bg-white w-full pr-11 h-10 pl-3 py-2 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded transition duration-200 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                      placeholder="Search for package tools..."
+                    />
+                    <button
+                      class="absolute h-8 w-8 right-1 top-1 my-auto px-2 flex items-center bg-white rounded"
+                      type="button"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative flex flex-col justify-between w-full h-full overflow-scroll text-gray-700 bg-white shadow-md rounded-lg bg-clip-border"
+            >
+              <table class="w-full text-left table-auto min-w-max">
+                <thead>
+                  <tr>
+                    <th class="p-4 border-b border-slate-200 bg-slate-50">
+                      <p
+                        class="text-sm font-semibold leading-none text-slate-500"
+                      >
+                        Serial
+                      </p>
+                    </th>
+                    <th class="p-4 border-b border-slate-200 bg-slate-50">
+                      <p
+                        class="text-sm font-semibold leading-none text-slate-500"
+                      >
+                        Tools Name
+                      </p>
+                    </th>
+                    <th class="p-4 border-b border-slate-200 bg-slate-50">
+                      <p
+                        class="text-sm font-semibold leading-none text-slate-500"
+                      >
+                        URLS
+                      </p>
+                    </th>
+                    <th class="p-4 border-b border-slate-200 bg-slate-50">
+                      <p
+                        class="text-sm font-semibold leading-none text-slate-500"
+                      >
+                        Action
+                      </p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-slate-50 border-b border-slate-200">
+                    <td class="p-4 py-5">
+                      <p class="text-black">2</p>
+                    </td>
+                    <td class="p-4 py-5">
+                      <input
+                        type="text"
+                        id="base-input"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      />
+                    </td>
+                    <td
+                      class="p-4 py-5 md:max-w-[200px] max-w-[100px] overflow-hidden"
+                    >
+                      <textarea
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      ></textarea>
+                    </td>
+                    <td class="p-4 py-5">
+                      <button
+                        type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+                      >
+                        Update
+                      </button>
+                      <button
+                        type="button"
+                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-50 border-b border-slate-200">
+                    <td class="p-4 py-5">
+                      <p class="text-black">2</p>
+                    </td>
+                    <td class="p-4 py-5">
+                      <input
+                        type="text"
+                        id="base-input"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      />
+                    </td>
+                    <td
+                      class="p-4 py-5 md:max-w-[200px] max-w-[100px] overflow-hidden"
+                    >
+                      <textarea
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      ></textarea>
+                    </td>
+                    <td class="p-4 py-5">
+                      <button
+                        type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+                      >
+                        Update
+                      </button>
+                      <button
+                        type="button"
+                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="flex justify-between items-center px-4 py-3">
+                <div class="text-sm text-slate-500 whitespace-nowrap mr-5">
+                  Showing <b>1-5</b> of 45
+                </div>
+                <div class="flex space-x-1">
+                  <button
+                    class="px-3 py-1 min-w-9 min-h-9 text-sm font-normal text-slate-500 bg-white border border-slate-200 rounded hover:bg-slate-50 hover:border-slate-400 transition duration-200 ease"
+                  >
+                    Prev
+                  </button>
+                  <button
+                    class="px-3 py-1 min-w-9 min-h-9 text-sm font-normal text-white bg-slate-800 border border-slate-800 rounded hover:bg-slate-600 hover:border-slate-600 transition duration-200 ease"
+                  >
+                    1
+                  </button>
+                  <button
+                    class="px-3 py-1 min-w-9 min-h-9 text-sm font-normal text-slate-500 bg-white border border-slate-200 rounded hover:bg-slate-50 hover:border-slate-400 transition duration-200 ease"
+                  >
+                    2
+                  </button>
+                  <button
+                    class="px-3 py-1 min-w-9 min-h-9 text-sm font-normal text-slate-500 bg-white border border-slate-200 rounded hover:bg-slate-50 hover:border-slate-400 transition duration-200 ease"
+                  >
+                    3
+                  </button>
+                  <button
+                    class="px-3 py-1 min-w-9 min-h-9 text-sm font-normal text-slate-500 bg-white border border-slate-200 rounded hover:bg-slate-50 hover:border-slate-400 transition duration-200 ease"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./utils/JS/admin-dashboard.js"></script>
+  </body>
+</html>
