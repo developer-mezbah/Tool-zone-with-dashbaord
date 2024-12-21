@@ -8,3 +8,5 @@
 #### [Login Page](https://toolszone.netlify.app/login)
 #### [Admin Dashboard](https://toolszone.netlify.app/admin-dashboard)
 #### [User Dashboard](https://toolszone.netlify.app/user-dashboard)
+#### [single-tools-table](https://toolszone.netlify.app/single-tools-table)
+#### [single-tools-form](https://toolszone.netlify.app/single-tools-form)
