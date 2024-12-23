@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive User Dashboard</title>
+    <title>Affiliate Commissions</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -56,7 +56,7 @@
           <a class="group" href="./user-dashboard.html">
             <i class="fa-solid fa-bars-staggered"></i>
             <span
-              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
               >Access</span
             >
           </a>
@@ -119,7 +119,7 @@
           <a class="group" href="./user-affiliate.html">
             <i class="fa fa-sack-dollar"></i>
             <span
-              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
               >affiliate</span
             >
           </a>
@@ -148,9 +148,55 @@
     <section
       class="user-dashboard-content md:mt-8 mt-16 md:pl-[290px] ml-2 md:ml-0 mr-2 md:mr-0 w-full overflow-hidden"
     >
-      <h1 class="text-3xl text-black font-medium capitalize mb-5">
-        Wellcome Mezbah_Uddin
-      </h1>
+      <div class="py-6 pr-4 pl-3">
+        <!-- Tabs  -->
+        <div class="flex gap-5 flex-wrap">
+          <a
+            href="./user-affiliate.html"
+            class="hover:text-primary transition-all font-medium text-[#535763]"
+            >Dashboard</a
+          >
+          <a
+            href="./user-affiliate-commissions.html"
+            class="hover:text-primary transition-all font-medium text-primary"
+            >Commissions</a
+          >
+          <a
+            href="./user-affiliate-payment.html"
+            class="hover:text-primary transition-all font-medium text-[#535763]"
+            >Payments</a
+          >
+        </div>
+        <hr class="mt-2 mb-5" />
+
+
+        
+
+        <!-- Recent Commissions Table -->
+        <div class="bg-white sm:p-4 p-2 rounded-md shadow">
+          <h3 class="text-xl font-bold mb-4">Commission history</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-gray-100 border-b">
+                  <th class="px-4 py-2 text-gray-600">Date</th>
+                  <th class="px-4 py-2 text-gray-600">Product</th>
+                  <th class="px-4 py-2 text-gray-600">Point</th>
+                  <th class="px-4 py-2 text-gray-600">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
       <footer class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3 rounded-lg">
         <div class="">

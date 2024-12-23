@@ -12,20 +12,20 @@ function manageNavbar() {
     closeSvg.style.display = "none";
   }
 
-const toggleNav = () => {
-  if (navbar.style.visibility === "hidden") {
-    navbar.style.right = "0px";
-    navbar.style.visibility = "visible";
-    navbar.classList.remove("hidden")
-    hambargerSvg.style.display = "none";
-    closeSvg.style.display = "block";
-  } else {
-    navbar.style.right = "-1000px";
-    navbar.style.visibility = "hidden";
-    closeSvg.style.display = "none";
-    hambargerSvg.style.display = "block";
-  }
-}
+  const toggleNav = () => {
+    if (navbar.style.visibility === "hidden") {
+      navbar.style.right = "0px";
+      navbar.style.visibility = "visible";
+      navbar.classList.remove("hidden");
+      hambargerSvg.style.display = "none";
+      closeSvg.style.display = "block";
+    } else {
+      navbar.style.right = "-1000px";
+      navbar.style.visibility = "hidden";
+      closeSvg.style.display = "none";
+      hambargerSvg.style.display = "block";
+    }
+  };
 
   // Add click event listener
   hambarger.addEventListener("click", toggleNav);
@@ -39,21 +39,33 @@ let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
     // Add class to make the navbar visible
-    navbar.style.position = "fixed"
-    navbar.classList.add("navbar-animation")
+    navbar.style.position = "fixed";
+    navbar.classList.add("navbar-animation");
   } else {
     // Remove class to hide the navbar
     navbar.classList.remove("navbar-animation");
-    navbar.style.position = "static"
+    navbar.style.position = "static";
   }
 });
-
-
-
-
-
-
-
-
-// Output all functions
+// Output navbar functions
 manageNavbar();
+
+
+
+// Single Tools Modal
+const showButtons = document.querySelectorAll(".view-single-tools-modal");
+const modal = document.getElementById("single-tools-modal");
+const modalClose = document.getElementById("single-tools-modal-close");
+
+showButtons.forEach((item) => {
+  item.addEventListener("click", () => {
+    modal.style.opacity = "1";
+    modal.style.visibility = "visible";
+  });
+});
+
+modalClose?.addEventListener("click", () => {
+  modal.style.opacity = "0";
+  modal.style.visibility = "hidden";
+});
+

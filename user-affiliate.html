@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive User Dashboard</title>
+    <title>Affiliate</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -56,7 +56,7 @@
           <a class="group" href="./user-dashboard.html">
             <i class="fa-solid fa-bars-staggered"></i>
             <span
-              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
               >Access</span
             >
           </a>
@@ -119,7 +119,7 @@
           <a class="group" href="./user-affiliate.html">
             <i class="fa fa-sack-dollar"></i>
             <span
-              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
               >affiliate</span
             >
           </a>
@@ -148,9 +148,134 @@
     <section
       class="user-dashboard-content md:mt-8 mt-16 md:pl-[290px] ml-2 md:ml-0 mr-2 md:mr-0 w-full overflow-hidden"
     >
-      <h1 class="text-3xl text-black font-medium capitalize mb-5">
-        Wellcome Mezbah_Uddin
-      </h1>
+      <div class="py-6 pr-4 pl-3">
+        <!-- Tabs  -->
+        <div class="flex gap-5 flex-wrap">
+          <a
+            href="./user-affiliate.html"
+            class="hover:text-primary transition-all font-medium text-primary"
+            >Dashboard</a
+          >
+          <a
+            href="./user-affiliate-commissions.html"
+            class="hover:text-primary transition-all font-medium text-[#535763]"
+            >Commissions</a
+          >
+          <a
+            href="./user-affiliate-payment.html"
+            class="hover:text-primary transition-all font-medium text-[#535763]"
+            >Payments</a
+          >
+        </div>
+        <hr class="mt-2 mb-5" />
+
+        <!-- Top Bar with Link -->
+        <div
+          class="flex sm:gap-4 gap-2 flex-wrap items-center justify-between bg-gray-100 sm:p-4 rounded-md mb-6"
+        >
+          <input
+            type="text"
+            value="https://new.toolsharebd.com/?u=VFdWNlltRm9jMVZrWKdsdQ=="
+            class="w-full sm:w-[80%] flex-1 px-4 py-2 border rounded-md text-gray-700"
+          />
+          <button
+            class="sm:px-4 px-2 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+          >
+            Copy Link
+          </button>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="sm:p-6 bg-gray-50">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <!-- Left Column -->
+            <div class="bg-white p-4 pb-8 rounded-md shadow">
+              <h3 class="text-gray-500 mb-2 text-center font-semibold">
+                Total Earnings
+              </h3>
+              <p class="text-2xl font-bold text-center pb-3">৳ 00</p>
+              <hr />
+              <div class="mt-4">
+                <div
+                  class="flex justify-between text-gray-700 border-b-[1px] border-gray-200"
+                >
+                  <span>Total Paid</span>
+                  <span>৳ 00</span>
+                </div>
+                <div
+                  class="flex justify-between text-gray-700 mt-2 border-b-[1px] border-gray-200"
+                >
+                  <span>Total Refunded</span>
+                  <span>৳ 00</span>
+                </div>
+                <div class="flex justify-between text-gray-700 mt-2">
+                  <span>Balance</span>
+                  <span>৳ 00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle Column -->
+            <div
+              class="bg-white sm:p-4 p-2 rounded-md shadow flex flex-col justify-between"
+            >
+              <div class="text-center mt-5">
+                <h3 class="text-gray-500 mb-2 font-semibold">
+                  Commission Rate
+                </h3>
+                <p class="text-2xl font-bold mb-4">15%</p>
+              </div>
+              <hr />
+              <div class="text-center mt-5">
+                <h3 class="text-gray-500 mb-2 font-semibold">Today Earns</h3>
+                <p class="text-2xl font-bold mb-4">15%</p>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div
+              class="bg-white p-4 rounded-md shadow flex flex-col justify-between"
+            >
+              <div class="text-center mt-5">
+                <h3 class="text-gray-500 mb-2 font-semibold">
+                  Total Clicks
+                </h3>
+                <p class="text-2xl font-bold mb-4">0</p>
+              </div>
+              <hr />
+              <div class="text-center mt-5">
+                <h3 class="text-gray-500 mb-2 font-semibold">Today Clicks</h3>
+                <p class="text-2xl font-bold mb-4">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Commissions Table -->
+        <div class="bg-white p-4 rounded-md shadow">
+          <h3 class="text-lg font-bold mb-4">Recent Commissions</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-gray-100 border-b">
+                  <th class="px-4 py-2 text-gray-600">Date</th>
+                  <th class="px-4 py-2 text-gray-600">Product</th>
+                  <th class="px-4 py-2 text-gray-600">Point</th>
+                  <th class="px-4 py-2 text-gray-600">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                  <td class="px-4 py-2 border-b text-gray-700">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
       <footer class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3 rounded-lg">
         <div class="">

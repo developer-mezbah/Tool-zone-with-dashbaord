@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive User Dashboard</title>
+    <title>Extention</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -56,7 +56,7 @@
           <a class="group" href="./user-dashboard.html">
             <i class="fa-solid fa-bars-staggered"></i>
             <span
-              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
               >Access</span
             >
           </a>
@@ -128,7 +128,7 @@
           <a class="group" href="./user-extension.html">
             <i class="fa-solid fa-gear"></i>
             <span
-              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
               >extension</span
             >
           </a>
@@ -148,9 +148,177 @@
     <section
       class="user-dashboard-content md:mt-8 mt-16 md:pl-[290px] ml-2 md:ml-0 mr-2 md:mr-0 w-full overflow-hidden"
     >
-      <h1 class="text-3xl text-black font-medium capitalize mb-5">
-        Wellcome Mezbah_Uddin
-      </h1>
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mb-8">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2
+            class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+          >
+            Explore Common Questions
+          </h2>
+        </div>
+        <div class="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+          <div
+            class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50"
+          >
+            <button
+              type="button"
+              id="question1"
+              data-state="closed"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span class="flex text-lg font-semibold text-black"
+                >How can I get started?</span
+              >
+              <svg
+                id="arrow1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer1"
+              style="display: none"
+              class="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                Getting started is easy! Sign up for an account, and you'll have
+                access to our platform's features. No credit card required for
+                the initial signup.
+              </p>
+            </div>
+          </div>
+          <div
+            class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50"
+          >
+            <button
+              type="button"
+              id="question2"
+              data-state="closed"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span class="flex text-lg font-semibold text-black"
+                >What is the pricing structure?</span
+              >
+              <svg
+                id="arrow2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer2"
+              style="display: none"
+              class="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                Our pricing structure is flexible. We offer both free and paid
+                plans. You can choose the one that suits your needs and budget.
+              </p>
+            </div>
+          </div>
+          <div
+            class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50"
+          >
+            <button
+              type="button"
+              id="question3"
+              data-state="closed"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span class="flex text-lg font-semibold text-black"
+                >What kind of support do you provide?</span
+              >
+              <svg
+                id="arrow3"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer3"
+              style="display: none"
+              class="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                We offer comprehensive customer support. You can reach out to
+                our support team through various channels, including email,
+                chat, and a knowledge base.
+              </p>
+            </div>
+          </div>
+          <div
+            class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50"
+          >
+            <button
+              type="button"
+              id="question4"
+              data-state="closed"
+              class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span class="flex text-lg font-semibold text-black"
+                >Can I cancel my subscription anytime?</span
+              >
+              <svg
+                id="arrow4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="answer4"
+              style="display: none"
+              class="px-4 pb-5 sm:px-6 sm:pb-6"
+            >
+              <p>
+                Yes, you can cancel your subscription at any time without any
+                hidden fees. We believe in providing a hassle-free experience
+                for our users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <footer class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3 rounded-lg">
         <div class="">
@@ -214,5 +382,27 @@
 
     <!-- =========== Scripts =========  -->
     <script src="./utils/JS/user-dashboard.js"></script>
+    <script>
+      // JavaScript to toggle the answers and rotate the arrows
+      document
+        .querySelectorAll('[id^="question"]')
+        .forEach(function (button, index) {
+          button.addEventListener("click", function () {
+            var answer = document.getElementById("answer" + (index + 1));
+            var arrow = document.getElementById("arrow" + (index + 1));
+
+            if (
+              answer.style.display === "none" ||
+              answer.style.display === ""
+            ) {
+              answer.style.display = "block";
+              arrow.style.transform = "rotate(0deg)";
+            } else {
+              answer.style.display = "none";
+              arrow.style.transform = "rotate(-180deg)";
+            }
+          });
+        });
+    </script>
   </body>
 </html>

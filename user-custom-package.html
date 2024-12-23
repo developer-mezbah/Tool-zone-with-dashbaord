@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive User Dashboard</title>
+    <title>Custom Package</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -56,7 +56,7 @@
           <a class="group" href="./user-dashboard.html">
             <i class="fa-solid fa-bars-staggered"></i>
             <span
-              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
               >Access</span
             >
           </a>
@@ -83,7 +83,7 @@
           <a class="group" href="./user-custom-package.html">
             <i class="fa fa-file-lines"></i>
             <span
-              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
               >custom package</span
             >
           </a>
@@ -148,9 +148,122 @@
     <section
       class="user-dashboard-content md:mt-8 mt-16 md:pl-[290px] ml-2 md:ml-0 mr-2 md:mr-0 w-full overflow-hidden"
     >
-      <h1 class="text-3xl text-black font-medium capitalize mb-5">
-        Wellcome Mezbah_Uddin
+      <h1
+        class="text-3xl text-center text-black font-medium capitalize mb-5 mt-10"
+      >
+        Make Custom Package
       </h1>
+      <button
+        id="create-packhag-show-modal"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded mb-5"
+      >
+        Launch static backdrop modal
+      </button>
+
+      <!-- Create Package Modal  -->
+      <div
+        id="create-package-modal"
+        style="transition: 0.4s all ease-out"
+        class="fixed top-0 left-0 opacity-0 invisible right-0 bottom-0 bg-[#0003] z-[70]"
+      >
+        <div class="h-full w-full flex justify-center items-center">
+          <div class="md:w-[768px] w-full bg-white rounded-lg">
+            <h2 class="text-xl p-3 font-medium">Grammarly Details</h2>
+            <hr />
+            <div class="px-3 pt-3 flex gap-2">
+              <span class="text-black font-semibold">Total: </span>
+              <span>600 BDT</span>
+            </div>
+            <div class="px-3 pt-3 flex gap-2">
+              <span class="text-black font-semibold">Total: </span>
+              <span>6 USD</span>
+            </div>
+            <div
+              class="m-3 border-[1px] border-gray-300 bg-white rounded-lg p-3"
+            >
+              <div class="flex gap-2 flex-wrap">
+                <div class="flex items-center ps-3">
+                  <input
+                    id="checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
+                  />
+                  <label
+                    for="checkbox"
+                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                    >Canva - 350</label
+                  >
+                </div>
+                <div class="flex items-center ps-3">
+                  <input
+                    id="checkbox1"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
+                  />
+                  <label
+                    for="checkbox1"
+                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                    >Canva - 350</label
+                  >
+                </div>
+                <div class="flex items-center ps-3">
+                  <input
+                    id="checkbox2"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
+                  />
+                  <label
+                    for="checkbox2"
+                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                    >Canva - 350</label
+                  >
+                </div>
+                <div class="flex items-center ps-3">
+                  <input
+                    id="checkbox3"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
+                  />
+                  <label
+                    for="checkbox3"
+                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                    >Canva - 350</label
+                  >
+                </div>
+                <div class="flex items-center ps-3">
+                  <input
+                    id="checkbox4"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
+                  />
+                  <label
+                    for="checkbox4"
+                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900"
+                    >Canva - 350</label
+                  >
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="p-3 float-right flex flex-wrap gap-2 items-center">
+              <button
+                id="create-package-modal-close"
+                class="bg-slate-500 text-white rounded-lg py-2 px-3"
+              >
+                Close
+              </button>
+              <button class="bg-blue-400 text-white rounded-lg py-2 px-3">
+                Create Package
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <footer class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3 rounded-lg">
         <div class="">

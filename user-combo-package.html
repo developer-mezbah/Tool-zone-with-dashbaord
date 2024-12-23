@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive User Dashboard</title>
+    <title>Combo Package</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
       tailwind.config = {
@@ -56,7 +57,7 @@
           <a class="group" href="./user-dashboard.html">
             <i class="fa-solid fa-bars-staggered"></i>
             <span
-              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
               >Access</span
             >
           </a>
@@ -74,7 +75,7 @@
           <a class="group" href="./user-combo-package.html">
             <i class="fa-solid fa-champagne-glasses"></i>
             <span
-              class="ml-2 capitalize text-[#535763] group-hover:text-primary transition-all"
+              class="ml-2 capitalize text-primary group-hover:text-primary transition-all"
               >combo package</span
             >
           </a>
@@ -148,11 +149,135 @@
     <section
       class="user-dashboard-content md:mt-8 mt-16 md:pl-[290px] ml-2 md:ml-0 mr-2 md:mr-0 w-full overflow-hidden"
     >
-      <h1 class="text-3xl text-black font-medium capitalize mb-5">
-        Wellcome Mezbah_Uddin
-      </h1>
-
-      <footer class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3 rounded-lg">
+      <!-- Service or Combo Package section  -->
+      <div class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3">
+        <div class="container">
+          <h1 class="text-center sm:text-4xl text-2xl capitalize">
+            Combo Package
+          </h1>
+          <div
+            class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 items-center justify-between mt-6"
+          >
+            <div
+              class="w-full choose-us-card flex flex-col gap-2 justify-center pt-5 pb-8 px-2 text-center bg-white h-full"
+            >
+              <h3 class="sm:text-3xl text-2xl font-bold">Lite Package</h3>
+              <p class="capitalize sm:text-xl text-lg">
+                <sub class="text-primary"><del>৳ 450</del></sub
+                >৳ 699 per month
+              </p>
+              <ul class="sm:pl-20 pl-6">
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">ubersuggest</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">semrush</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">grammarly</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">Canva</span>
+                </li>
+              </ul>
+              <p class="my-2">2 Credits per purchase</p>
+              <button class="button-add-to-cart mx-auto">Add to Cart</button>
+            </div>
+            <div
+              class="w-full choose-us-card flex flex-col gap-2 justify-center pt-5 pb-8 px-2 text-center bg-white h-full"
+            >
+              <h3 class="sm:text-3xl text-2xl font-bold">Mega Package</h3>
+              <p class="capitalize sm:text-xl text-lg">
+                <sub class="text-primary"><del>৳ 450</del></sub
+                >৳ 699 per month
+              </p>
+              <ul class="sm:pl-20 pl-6">
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">ubersuggest</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">semrush</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">grammarly</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">Canva</span>
+                </li>
+              </ul>
+              <p class="my-2">2 Credits per purchase</p>
+              <button class="button-add-to-cart mx-auto">Add to Cart</button>
+            </div>
+            <div
+              class="w-full choose-us-card flex flex-col gap-2 justify-center pt-5 pb-8 px-2 text-center bg-white h-full"
+            >
+              <h3 class="sm:text-3xl text-2xl font-bold">Advance Package</h3>
+              <p class="capitalize sm:text-xl text-lg">
+                <sub class="text-primary"><del>৳ 450</del></sub
+                >৳ 699 per month
+              </p>
+              <ul class="sm:pl-20 pl-6">
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">ubersuggest</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">semrush</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">grammarly</span>
+                </li>
+                <li class="font-bold flex gap-2 text-black">
+                  <span class="text-primary"
+                    ><i class="fa-regular fa-circle-check"></i
+                  ></span>
+                  <span class="capitalize">Canva</span>
+                </li>
+              </ul>
+              <p class="my-2">2 Credits per purchase</p>
+              <button class="button-add-to-cart mx-auto">Add to Cart</button>
+            </div>
+          </div>
+          <!-- Load More button  -->
+          <div class="flex justify-center items-center mt-8">
+            <button class="button-load-more px-10">Load More</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3">
         <div class="">
           <div
             class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 justify-between mt-6"
