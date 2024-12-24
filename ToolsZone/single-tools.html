@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigle Tools</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff4b34",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header
+      id="full-navbar"
+      class="bg-white py-4 px-3 top-0 left-0 w-full shadow-md z-50"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <a href="/index.html" class="logo">
+            <img
+              src="/utils/images/logo.webp"
+              alt="ToolsZoneBD"
+              class="max-w-[140px] pb-3"
+            />
+          </a>
+          <!-- Hambar button  -->
+          <button
+            id="hambarger"
+            class="md:hidden block text-primary text-4xl pr-5"
+          >
+            <i id="hambarger-svg" class="fa-solid fa-bars"></i>
+          </button>
+          <nav
+            id="navbar"
+            class="md:static fixed hidden md:block z-50 top-0 right-0 bg-[#000000cc] w-[200px] h-screen md:h-auto md:w-auto md:bg-transparent p-4 md:p-0 transition-all"
+          >
+            <!-- Close Button  -->
+            <button
+              id="hambarger-close"
+              class="md:hidden block mt-1 ml-1 border-[1px] border-primary text-primary px-3 py-1 rounded-lg z-50 hover:text-white hover:bg-primary"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul
+              class="md:flex flex-wrap lg:gap-4 space-y-3 md:space-y-0 mt-10 md:mt-0"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="md:p-2 hover:underline hover:text-primary text-primary md:text-black transition-all md:text-lg whitespace-nowrap"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./single-tools.html"
+                  class="md:p-2 hover:underline hover:text-primary underline text-primary transition-all md:text-lg whitespace-nowrap"
+                  >Single Tools</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./combo-package.html"
+                  class="md:p-2 hover:underline hover:text-primary text-primary md:text-black transition-all md:text-lg whitespace-nowrap"
+                  >Combo Package</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./register.html"
+                  class="md:p-2 hover:underline hover:text-primary text-primary md:text-black transition-all md:text-lg whitespace-nowrap"
+                  >Registration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./cart-page.html"
+                  class="flex items-center text-lg gap-1 -mt-[0.5px] md:mr-2 mr-0 pb-2 pd:mb-0 hover:text-primary text-primary md:text-black"
+                  >Cart
+                  <div class="text-2xl relative">
+                    <span
+                      class="absolute -right-2 -top-2 w-5 h-5 bg-primary text-white p-1 rounded-full text-sm flex items-center justify-center"
+                      >1</span
+                    >
+                    <i class="fa-solid fa-cart-shopping"></i></div
+                ></a>
+              </li>
+              <!-- Those classes used for active navbar -->
+              <li>
+                <a
+                  href="./login.html"
+                  class="px-4 py-2 nav-acitve hover:bg-orange-600 hover:text-white transition-all md:text-lg"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Group Buy Single Tools  -->
+    <section class="bg-[#ffffff] md:py-[80px] py-[40px] px-3">
+      <div class="container">
+        <h1 class="text-center sm:text-4xl text-2xl capitalize">
+          Group Buy Single Tools
+        </h1>
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-8 sm:gap-4 gap-2 items-center justify-between mt-6"
+        >
+          <div
+            class="max-w-sm h-full md:p-6 p-3 bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <!-- Product Image -->
+            <div
+              class="group flex justify-center cursor-pointer md:h-[200px] relative overflow-hidden"
+            >
+              <img
+                src="./utils/images/product-img-1.webp"
+                alt="SEMRUSH Logo"
+                class="w-full md:h-full group-hover:scale-110 transition-all"
+              />
+              <button
+                class="view-single-tools-modal absolute top-0 left-0 right-0 bottom-0 group-hover:bg-[#2fbb989c] justify-center items-center text-white opacity-0 group-hover:opacity-100 flex transition-all"
+              >
+                <span class="flex flex-col sm:text-3xl text-center">
+                  <i class="fa fa-down-left-and-up-right-to-center"></i>
+                  View
+                </span>
+              </button>
+            </div>
+            <!-- Content -->
+            <div class="mt-4">
+              <p class="text-gray-500 text-sm text-center mb-4">
+                $3.02 USD - 1 CREDIT
+              </p>
+              <!-- Action Button -->
+              <div class="flex justify-center">
+                <button
+                  class="w-full py-2 text-white bg-red-500 hover:bg-red-600 rounded-lg md:font-medium md:text-lg text-sm transition duration-300 whitespace-nowrap"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-sm h-full md:p-6 p-3 bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <!-- Product Image -->
+            <div
+              class="group flex justify-center cursor-pointer md:h-[200px] relative overflow-hidden"
+            >
+              <img
+                src="./utils/images/product-img-2.webp"
+                alt="SEMRUSH Logo"
+                class="w-full md:h-full group-hover:scale-110 transition-all"
+              />
+              <button
+                class="view-single-tools-modal absolute top-0 left-0 right-0 bottom-0 group-hover:bg-[#2fbb989c] justify-center items-center text-white opacity-0 group-hover:opacity-100 flex transition-all"
+              >
+                <span class="flex flex-col sm:text-3xl text-center">
+                  <i class="fa fa-down-left-and-up-right-to-center"></i>
+                  View
+                </span>
+              </button>
+            </div>
+            <!-- Content -->
+            <div class="mt-4">
+              <p class="text-gray-500 text-sm text-center mb-4">
+                $3.02 USD - 1 CREDIT
+              </p>
+              <!-- Action Button -->
+              <div class="flex justify-center">
+                <button
+                  class="w-full py-2 text-white bg-red-500 hover:bg-red-600 rounded-lg md:font-medium md:text-lg text-sm transition duration-300 whitespace-nowrap"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-sm h-full md:p-6 p-3 bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <!-- Product Image -->
+            <div
+              class="group flex justify-center cursor-pointer md:h-[200px] relative overflow-hidden"
+            >
+              <img
+                src="./utils/images/product-img-3.webp"
+                alt="SEMRUSH Logo"
+                class="w-full md:h-full group-hover:scale-110 transition-all"
+              />
+              <button
+                class="view-single-tools-modal absolute top-0 left-0 right-0 bottom-0 group-hover:bg-[#2fbb989c] justify-center items-center text-white opacity-0 group-hover:opacity-100 flex transition-all"
+              >
+                <span class="flex flex-col sm:text-3xl text-center">
+                  <i class="fa fa-down-left-and-up-right-to-center"></i>
+                  View
+                </span>
+              </button>
+            </div>
+            <!-- Content -->
+            <div class="mt-4">
+              <p class="text-gray-500 text-sm text-center mb-4">
+                $3.02 USD - 1 CREDIT
+              </p>
+              <!-- Action Button -->
+              <div class="flex justify-center">
+                <button
+                  class="w-full py-2 text-white bg-red-500 hover:bg-red-600 rounded-lg md:font-medium md:text-lg text-sm transition duration-300 whitespace-nowrap"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-sm h-full md:p-6 p-3 bg-white border border-gray-200 rounded-lg shadow"
+          >
+            <!-- Product Image -->
+            <div
+              class="group flex justify-center cursor-pointer md:h-[200px] relative overflow-hidden"
+            >
+              <img
+                src="./utils/images/product-img-4.webp"
+                alt="SEMRUSH Logo"
+                class="w-full md:h-full group-hover:scale-110 transition-all"
+              />
+              <button
+                class="view-single-tools-modal absolute top-0 left-0 right-0 bottom-0 group-hover:bg-[#2fbb989c] justify-center items-center text-white opacity-0 group-hover:opacity-100 flex transition-all"
+              >
+                <span class="flex flex-col sm:text-3xl text-center">
+                  <i class="fa fa-down-left-and-up-right-to-center"></i>
+                  View
+                </span>
+              </button>
+            </div>
+            <!-- Content -->
+            <div class="mt-4">
+              <p class="text-gray-500 text-sm text-center mb-4">
+                $3.02 USD - 1 CREDIT
+              </p>
+              <!-- Action Button -->
+              <div class="flex justify-center">
+                <button
+                  class="w-full py-2 text-white bg-red-500 hover:bg-red-600 rounded-lg md:font-medium md:text-lg text-sm transition duration-300 whitespace-nowrap"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== Single Tools Model =========== -->
+    <div
+      id="single-tools-modal"
+      style="transition: 0.4s all ease-out"
+      class="fixed opacity-0 invisible top-0 left-0 right-0 bottom-0 bg-[#0003] z-50"
+    >
+      <div class="h-full w-full flex justify-center items-center">
+        <div class="w-[500px] bg-white rounded-lg">
+          <div class="flex items-center justify-between p-3">
+            <h2 class="text-lg">Grammarly Details</h2>
+            <button id="single-tools-modal-close">
+              <i class="fa-solid fa-xmark text-[#00000067] text-2xl"></i>
+            </button>
+          </div>
+          <hr />
+          <div class="p-3">
+            <p class="text-[#000000a1]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+              porro doloribus repudiandae expedita ipsum iste dolor iure nulla
+              odit consequuntur!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#f2f2fc] md:py-[80px] py-[40px] px-3">
+      <div class="container">
+        <div
+          class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 justify-between mt-6"
+        >
+          <div class="w-full">
+            <h3 class="text-lg font-medium">About Us</h3>
+            <p class="mt-3">
+              ToolsZoneBD is the first Group Buy SEO Tools company in Bangladesh
+              established in 2023. We are providing the most usable SEO Tools
+              where you can find all of your SEO, Graphics, Content, Amazon and
+              Marketing Solutions.
+            </p>
+          </div>
+          <div class="w-full">
+            <h3 class="text-xl font-medium">Follow us</h3>
+            <div class="text-primary flex flex-col mt-3 space-y-2">
+              <a
+                href="#"
+                class="whitespace-nowrap font-medium text-md hover:underline transition-all"
+                ><i class="fa-brands fa-facebook mr-2"></i> Facebook Page</a
+              >
+              <a
+                href="#"
+                class="whitespace-nowrap font-medium text-md hover:underline transition-all"
+                ><i class="fa-brands fa-facebook mr-2"></i> Facebook Page</a
+              >
+            </div>
+          </div>
+          <div class="w-full">
+            <h3 class="text-xl font-medium mt-3">Contact Info</h3>
+            <div class="text-primary flex flex-col mt-3 space-y-2">
+              <a
+                href="#"
+                class="whitespace-nowrap font-medium text-md hover:underline transition-all"
+                ><i class="fa-solid fa-phone mr-2"></i> 01717329157 - Shamim
+                Ahmed</a
+              >
+              <a
+                href="#"
+                class="whitespace-nowrap font-medium text-md hover:underline transition-all"
+                ><i class="fa-solid fa-phone mr-2"></i> 01980643679 - Kazi
+                Rahat</a
+              >
+              <a
+                href="#"
+                class="whitespace-nowrap font-medium text-md hover:underline transition-all"
+                ><i class="fa-solid fa-phone mr-2"></i> 01406870382 - Tarek
+                Ahmed</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="font-medium text-md text-center mt-5">
+        © 2025 Copyright: Shamim Ahmed
+      </p>
+    </footer>
+
+    <script src="./utils/JS/main.js"></script>
+  </body>
+</html>

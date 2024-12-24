@@ -1,0 +1,57 @@
+https://new.toolszonebd.com/admin/dashboard?page=dashboard
+https://new.toolszonebd.com/
+
+abdullah
+abdullah
+
+
+
+
+
+                    Grid layout for Input 
+
+
+                    Text Input 
+  <div class="mb-5">
+      <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 ">Base input</label>
+      <input type="text" id="base-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+  </div>
+
+                    TextArea Input 
+<label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+
+                    Number Input 
+
+                    Selection Input
+  <label for="countries" class="block mb-2 text-sm font-medium text-gray-900">Select your country</label>
+  <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+
+    <option>United States</option>
+    <option>Canada</option>
+    <option>France</option>
+    <option>Germany</option>
+  </select>
+                    File Upload Input
+<input type="file"
+                  id="ProductThumbnail"
+                  class="w-full text-gray-500 font-medium text-lg bg-gray-100 file:cursor-pointer cursor-pointer file:border-0 file:py-3 file:px-4 file:mr-4 file:bg-gray-800 file:hover:bg-gray-700 file:text-white rounded" />
+
+
+
+
+
+            Pending work
+Order page
+Review page
+Send Mail Page
+Affiliate Page
+
+
+
+
+
+          User Access
+Email: developer.mezbah@gmail.com 
+Pass: MASUD KHAN6449248
+Link: https://new.toolszonebd.com/dashboard?user=profile
